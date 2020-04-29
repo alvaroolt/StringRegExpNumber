@@ -1,0 +1,23 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+html section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html section article {
+  width: 30%;
+  border: 2px solid black;
+  margin: 1% auto;
+  padding: 10px;
+}
+
+html section article p {
+  text-align: justify;
+}
+
+html section article input[type="text"] {
+  width: 50%;
+}

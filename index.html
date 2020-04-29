@@ -1,0 +1,137 @@
+<!--Álvaro Leiva Toledano-->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro Leiva Toledano" />
+    <title>String, RegExp y Number - Álvaro Leiva Toledano</title>
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>String, RegExp y Number - Álvaro Leiva Toledano</h1>
+    <main>
+        <section>
+            <article>
+                <h2>Capitaliza</h2>
+                <p>Transforma entrada a otra similiar con la primera letra de cada palabra en mayúscula.</p>
+                <input type="text" id="inputCapitaliza">
+                <input type="submit" id="submitCapitaliza">
+                <p></p>
+            </article>
+            <article>
+                <h2>Invierte</h2>
+                <p>Transforma entrada a otra similiar con las mayúsculas/minúsculas invertidas.</p>
+                <input type="text" id="inputInvierte">
+                <input type="submit" id="submitInvierte">
+                <p></p>
+            </article>
+            <article>
+                <h2>CamelCase</h2>
+                <p>Transforma entrada a otra similiar con formato en Camel Case (hola amigos cómo estáis ->
+                    holaAmigosCómoEstáis)</p>
+                <input type="text" id="inputCamelCase">
+                <input type="submit" id="submitCamelCase">
+            </article>
+            <article>
+                <h2>Sin CamelCase</h2>
+                <p>Transforma entrada a otra similiar quitando el formato Camel Case (holaAmigosCómoEstáis -> hola
+                    amigos cómo estáis)</p>
+                <input type="text" id="inputSinCamelCase">
+                <input type="submit" id="submitSinCamelCase">
+            </article>
+            <article>
+                <h2>Finaliza</h2>
+                <p>Averigua si una cadena acaba con otra.</p>
+                <input type="text" id="inputFinaliza">
+                <input type="submit" id="submitFinaliza">
+            </article>
+            <article>
+                <h2>Empieza</h2>
+                <p>Empieza... Averigua si una cadena comienza con otra.</p>
+                <input type="text" id="inputEmpieza">
+                <input type="submit" id="submitEmpieza">
+            </article>
+            <article>
+                <h2>Dni</h2>
+                <p>Indica error en caso de que la entrada no sea DNI válido. Usa expresiones regulares con grupos de
+                    captura en la comprobación de la letra.</p>
+                <ul>
+                    <li>12328337S (válido)</li>
+                    <li>32446967Q (válido)</li>
+                    <li>8189963N (inválido)</li>
+                    <li>81899631 (inválido)</li>
+                    <li>81899631I(inválido, ni letras IÑOU)</li>
+                    <li>12345678Z (válido)</li>
+                </ul>
+                <input type="text" id="inputDNI">
+                <input type="submit" id="submitDNI">
+            </article>
+            <article>
+                <h2>Matrículas</h2>
+                <p>Transforma entrada a otra similiar con la primera letra de cada palabra en mayúscula.</p>
+                <ul>
+                    <li>1234BCD (válida)</li>
+                    <li>1234 BCD (válida)</li>
+                    <li>1234-BCD (válida)</li>
+                    <li>123 BCD (inválida)</li>
+                    <li>1234 ABC (inválida, contiene vocal)</li>
+                    <li>1234 QBC (inválida, contiene la Q)</li>
+                    <li>1234 MNÑ (inválida, contiene la Ñ)</li>
+                </ul>
+                <input type="text" id="inputMatriculas">
+                <input type="submit" id="submitMatriculas">
+            </article>
+            <article>
+                <h2>Códigos Postales</h2>
+                <p>Transforma entrada a otra similiar con la primera letra de cada palabra en mayúscula.</p>
+                <ul>
+                    <li>52001 (válido)</li>
+                    <li>14014 (válido)</li>
+                    <li>53001 (inválido)</li>
+                    <li>14000 (inválido)</li>
+                </ul>
+                <input type="text" id="inputCodigosPostales">
+                <input type="submit" id="submitCodigosPostales">
+            </article>
+            <article>
+                <h2>Dirección MAC</h2>
+                <p>Transforma entrada a otra similiar con la primera letra de cada palabra en mayúscula.</p>
+                <input type="text" id="inputDireccionMac">
+                <input type="submit" id="submitDireccionMac">
+            </article>
+            <article>
+                <h2>Dirección IP</h2>
+                <p>Transforma entrada a otra similiar con la primera letra de cada palabra en mayúscula.</p>
+                <ul>
+                    <li>0.0.0.0 (válido)</li>
+                    <li>14.255.1.2 (válido)</li>
+                    <li>09.1.2.3 (inválido)</li>
+                    <li>1.260.4.5 (inválido)</li>
+                    <li>09.6.5.4 (inválido)</li>
+                    <li>1.2.3.011 (inválido)</li>
+                </ul>
+                <input type="text" id="inputDireccionIP">
+                <input type="submit" id="submitDireccionIP">
+            </article>
+        </section>
+        <!-- <section>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+        </section> -->
+    </main>
+</body>
+
+</html>
